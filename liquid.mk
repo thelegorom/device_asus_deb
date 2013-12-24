@@ -14,28 +14,36 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-# Boot animation
+
+# Boot 
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common liquid stuff.
+# device
+$(call inherit-product, device/asus/deb/full_deb.mk)
+
+# tablet
 $(call inherit-product, vendor/liquid/config/common_tablet.mk)
 
-# Inherit GSM stuff
+# phone
 $(call inherit-product, vendor/liquid/config/common_gsm.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
-# Inherit device configuration
-$(call inherit-product, device/asus/deb/full_deb.mk)
-
-## Device identifier. This must come after all inclusions
+# product
 PRODUCT_DEVICE := deb
-PRODUCT_NAME := liquid_deb
 PRODUCT_BRAND := google
+PRODUCT_NAME := liquid_deb
 PRODUCT_MODEL := Nexus 7
 PRODUCT_MANUFACTURER := asus
+PRODUCT_PROPERTY_OVERRIDES += ro.buildzipid=liquid.vs980.$(shell date +%m%d%y).$(shell date +%H%M%S)
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razorg BUILD_FINGERPRINT=google/razorg/deb:4.4/KRT16S/920375:user/release-keys PRIVATE_BUILD_DESC="razorg-user 4.4 KRT16S 920375 release-keys"
-
+# override
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_NUMBER=937116 \
+    PRODUCT_NAME=razorg \
+    TARGET_BUILD_TYPE=user \
+    BUILD_VERSION_TAGS=release-keys \
+    PRIVATE_BUILD_DESC="razorg-user 4.4.2 KOT49H 937116 release-keys" \
+    BUILD_FINGERPRINT="google/razorg/deb:4.4.2/KOT49H/937116:user/release-keys"
