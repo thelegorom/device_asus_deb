@@ -1,10 +1,14 @@
 [
  {
-   "repository": "android_kernel_google_msm",
-   "target_path": "kernel/google/msm"
+   "remote": "gh",
+   "repository": "CyanogenMod/android_kernel_google_msm",
+   "target_path": "kernel/google/msm",
+   "branch": "cm-11.0"
  },
  {
-   "repository": "android_device_asus_flo",
+   "remote": "gh",
+   "repository": "LiquidSmooth/android_device_asus_flo",
    "target_path": "device/asus/flo"
+   "branch": "kitkat"
  }
 ]
