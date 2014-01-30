@@ -25,8 +25,8 @@ $(call inherit-product, device/asus/deb/full_deb.mk)
 # tablet
 $(call inherit-product, vendor/liquid/config/common_tablet.mk)
 
-# phone
-$(call inherit-product, vendor/liquid/config/common_gsm.mk)
+# telephony
+$(call inherit-product, vendor/liquid/config/telephony.mk)
 
 # Enhanced NFC
 $(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
