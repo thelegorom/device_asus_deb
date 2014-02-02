@@ -14,6 +14,10 @@ $(call inherit-product, vendor/slim/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/asus/deb/aosp_deb.mk)
 
+#MMS
+PRODUCT_PACKAGES += \
+    Mms
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := deb
 PRODUCT_NAME := slim_deb
