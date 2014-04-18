@@ -1,20 +1,32 @@
 [
  {
-   "remote": "gh",
-   "repository": "CyanogenMod/android_kernel_google_msm",
-   "target_path": "kernel/google/msm",
-   "branch": "cm-11.0"
+   "remote": "sr",
+   "repository":  "proprietary_vendor_asus",
+   "target_path": "vendor/asus",
+   "revision":      "kk4.4"
+ },
+ {
+   "remote": "sr",
+   "repository":  "proprietary_vendor_broadcom",
+   "target_path": "vendor/broadcom",
+   "revision":      "kk4.4"
+ },
+ {
+   "remote": "sr",
+   "repository":  "proprietary_vendor_qcom",
+   "target_path": "vendor/qcom",
+   "revision":      "kk4.4"
  },
  {
    "remote": "gh",
-   "repository": "LiquidSmooth/android_device_asus_flo",
-   "target_path": "device/asus/flo"
-   "branch": "kitkat"
+   "repository":  "LiquidSmooth/android_device_asus_flo",
+   "target_path": "device/asus/flo",
+   "revision":      "kitkat"
  },
  {
-    "remote": "gh",
-    "repository": "TheMuppets/proprietary_vendor_asus",
-    "target_path": "vendor/asus",
-    "revision": "cm-11.0"
+   "remote": "sr",
+   "repository":  "kernel_asus_flo",
+   "target_path": "kernel/asus/flo",
+   "revision":      "kk4.4"
  }
 ]

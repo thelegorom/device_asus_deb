@@ -40,10 +40,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
         rild.libpath=/system/lib/libril-qc-qmi-1.so
-        
-# OTA ID
-PRODUCT_PROPERTY_OVERRIDES += \
-    otaupdater.otaid=liquiddeb
 
 # the actual meat of the device-specific product definition
 $(call inherit-product, device/asus/flo/device-common.mk)
