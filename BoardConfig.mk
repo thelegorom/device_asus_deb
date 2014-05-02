@@ -17,6 +17,7 @@
 TARGET_BOOTLOADER_BOARD_NAME := deb
 TARGET_BOOTLOADER_NAME := deb
 TARGET_BOARD_INFO_FILE := device/asus/deb/board-info.txt
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.7
 
 BOARD_HAL_STATIC_LIBRARIES := libdumpstate.deb
 

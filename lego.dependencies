@@ -1,0 +1,32 @@
+[
+ {
+   "remote": "github",
+   "repository":  "SlimRoms/proprietary_vendor_asus",
+   "target_path": "vendor/asus",
+   "revision":      "kk4.4"
+ },
+ {
+   "remote": "github",
+   "repository":  "SlimRoms/proprietary_vendor_broadcom",
+   "target_path": "vendor/broadcom",
+   "revision":      "kk4.4"
+ },
+ {
+   "remote": "github",
+   "repository":  "SlimRoms/proprietary_vendor_qcom",
+   "target_path": "vendor/qcom",
+   "revision":      "kk4.4"
+ },
+ {
+   "remote": "github",
+   "repository":  "thelegorom/android_device_asus_flo",
+   "target_path": "device/asus/flo",
+   "revision":      "kitkat"
+ },
+ {
+   "remote": "github",
+   "repository":  "SlimRoms/kernel_asus_flo",
+   "target_path": "kernel/asus/flo",
+   "revision":      "kk4.4"
+ }
+]
